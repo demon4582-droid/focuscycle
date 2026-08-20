@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusCycle</string>
+    
+    <!-- This description appears in the Android Settings menu -->
+    <string name="accessibility_desc">
+        FocusCycle uses this service to detect when Instagram is opened. 
+        If the 40-minute cooldown is active, the service will redirect you to the FocusCycle dashboard 
+        to help prevent compulsive usage. It does not read your messages or collect any data.
+    </string>
+</resources>
