@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- These permissions are implicit for the services declared below -->
-
     <application
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@android:drawable/ic_dialog_info"
         android:label="FocusCycle"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Material3.DayNight">
 
-        <!-- The main dashboard UI -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -23,7 +19,6 @@
             </intent-filter>
         </activity>
 
-        <!-- The service that tracks Instagram usage and blocks it -->
         <service
             android:name=".FocusService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
@@ -36,7 +31,6 @@
                 android:resource="@xml/accessibility_config" />
         </service>
 
-        <!-- The service that hides Instagram notifications during cooldown -->
         <service
             android:name=".FocusNotificationService"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
